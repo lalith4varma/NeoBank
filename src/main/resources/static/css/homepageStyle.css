@@ -1,0 +1,535 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#00d9ff;
+    ;
+    color: white;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #1B2D58;
+    color: white;
+}
+
+.logoAndWelcome {
+    display: flex;
+    align-items: center;
+}
+
+.NeoBankImg {
+    width: 150px;
+    height: auto;
+}
+
+.welcomeMessage {
+    margin-left: 15px;
+}
+
+.welcomeMessage h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.welcomeMessage h4 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #F5C518; /* Lightened color for "USER" */
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks li {
+    display: inline;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navLinks a:hover {
+    color: #6D77E0;
+}
+
+.mainContainer {
+    padding: 100px;
+    text-align: center;
+}
+
+.mainContainer h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.mainContainer p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.ctaButton {
+    padding: 15px 30px;
+    background-color: #6D77E0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+    background-color: #505BC8;
+}
+
+.footerContainer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1B2D58;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mainContainer {
+        padding: 50px 20px;
+    }
+
+    .mainContainer h1 {
+        font-size: 2.5em;
+    }
+
+    .mainContainer p {
+        font-size: 1.2em;
+        max-width: 100%;
+    }
+
+    .ctaButton {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+.aboutContainer {
+    padding: 100px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.aboutContainer h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.aboutSection {
+    margin-bottom: 50px;
+}
+
+.aboutSection h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.aboutSection p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aboutSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.aboutSection li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 10px;
+}
+
+.aboutSection li strong {
+    color: #6D77E0;
+}
+
+.ctaButton {
+    padding: 15px 30px;
+    background-color: #6D77E0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.ctaButton:hover {
+    background-color: #505BC8;
+}
+
+@media (max-width: 768px) {
+    .aboutContainer {
+        padding: 50px 20px;
+    }
+
+    .aboutContainer h1 {
+        font-size: 2.5em;
+    }
+
+    .aboutSection h2 {
+        font-size: 1.8em;
+    }
+
+    .aboutSection p, .aboutSection li {
+        font-size: 1.1em;
+    }
+
+    .ctaButton {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+
+.contactContainer {
+    padding: 100px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contactContainer h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contactContainer p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.contactDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contactInfo {
+	margin: 0.1em;
+    width: 30%;
+    background-color: #1B2D58;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.contactInfo h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contactInfo p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.contactForm {
+    background-color: #1B2D58;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.contactForm h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contactForm label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0F245A;
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contactForm input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #6D77E0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactForm input[type="submit"]:hover {
+    background-color: #505BC8;
+}
+
+@media (max-width: 768px) {
+    .contactDetails {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactInfo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contactContainer {
+        padding: 50px 20px;
+    }
+
+    .contactContainer h1 {
+        font-size: 2.5em;
+    }
+
+    .contactForm {
+        padding: 20px;
+    }
+
+    .contactForm h2 {
+        font-size: 1.8em;
+    }
+}
+
+.servicesContainer {
+    padding: 100px;
+    text-align: center;
+}
+
+.servicesContainer h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.serviceItems {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.serviceItem {
+    width: 200px;
+    height: 150px;
+    background-color: #1B2D58;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+.serviceItem:hover {
+    background-color: #6D77E0;
+}
+
+.popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContent {
+    margin: auto;
+    margin-top: 7em;
+    left: 0;
+    right: 0;
+    background-color: #1B2D58;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    box-sizing: border-box;
+}
+
+.popupContent table tr td{
+    border: 1px solid black;
+}
+
+
+
+.popupContent h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.popupContent form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.popupContent form input[type="text"],
+.popupContent form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0F245A;
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.popupContent form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6D77E0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popupContent form input[type="submit"]:hover {
+    background-color: #505BC8;
+}
+
+.popupContent button {
+    padding: 10px 20px;
+    background-color: #505BC8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.popupContent button:hover {
+    background-color: #6D77E0;
+}
+
+@media (max-width: 768px) {
+    .servicesContainer {
+        padding: 50px 20px;
+    }
+
+    .serviceItem {
+        width: 150px;
+        height: 120px;
+    }
+
+    .popupContent {
+        padding: 20px;
+    }
+}
+
+.confirmLogoutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0F245A;
+    color: white;
+    text-align: center;
+}
+
+.confirmLogoutContainer h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.cancelButton,
+.logoutButton {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancelButton {
+    background-color: #B0B4C2;
+}
+
+.cancelButton:hover {
+    background-color: #9A9DAB;
+}
+
+.logoutButton {
+    background-color: #6D77E0;
+}
+
+.logoutButton:hover {
+    background-color: #505BC8;
+}
+

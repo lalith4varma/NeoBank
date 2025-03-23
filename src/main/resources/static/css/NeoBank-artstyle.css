@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #0F245A;
+    color: white;
+    padding: 0 300px;
+}
+
+.introContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introContainer h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.introContainer label {
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.loginContainer {
+    width: 300px;
+    padding: 30px;
+    background-color: #1B2D58;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.loginContainer label {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.loginContainer input[type="text"],
+.loginContainer input[type="password"],
+.loginContainer input[type="number"]
+ {
+    width: 100%;
+    padding: 10px;
+	margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0F245A;
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.loginContainer input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #6D77E0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loginContainer input[type="submit"]:hover {
+    background-color: #505BC8;
+}
+
+.loginContainer label:last-of-type {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #B0B4C2;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.loginContainer label:last-of-type:hover {
+    color: #FFFFFF;
+}
+
+.introContainer img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.form-error {
+    color: red;
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+	display: block;
+}
+
+a{
+    color: blueviolet;
+}
+
+.error-message{
+	display: block;
+	margin: auto;
+	color: red;
+    background-color: #fdd;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .introContainer {
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+
+    .introContainer label {
+        max-width: 100%;
+    }
+
+    .loginContainer {
+        width: 80%;
+    }
+}
